@@ -29,43 +29,43 @@ It is guaranteed that the list represents a number that does not have leading ze
 
 class Solution {
 public:
-    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
-        ListNode* out = new ListNode();
+  ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
+    ListNode* out = new ListNode();
 
-        ListNode* cur = out;
-        bool carry = false;
-        while (!(l1 == NULL && l2 == NULL)) {     
+    ListNode* cur = out;
+    bool carry = false;
+    while (!(l1 == NULL && l2 == NULL)) {     
 
-            if (l1 != NULL) {
-                cur->val += l1->val;
-                l1 = l1->next;
-            }
+      if (l1 != NULL) {
+        cur->val += l1->val;
+        l1 = l1->next;
+      }
 
-            if (l2 != NULL) {
-                cur->val += l2->val;
-                l2 = l2->next;
-            }
+      if (l2 != NULL) {
+        cur->val += l2->val;
+        l2 = l2->next;
+      }
 
-            if (carry) {
-                cur->val += 1;
-                carry = false;
-            }
+      if (carry) {
+        cur->val += 1;
+        carry = false;
+      }
 
-            if (cur->val > 9) {
-                cur->val -= 10;
-                carry = true;
-            }
+      if (cur->val > 9) {
+        cur->val -= 10;
+        carry = true;
+      }
 
-            if (!(l1 == NULL && l2 == NULL)) {
-                cur->next = new ListNode();
-                cur = cur->next;
-            }
-        };
+      if (!(l1 == NULL && l2 == NULL)) {
+        cur->next = new ListNode();
+        cur = cur->next;
+      }
+    };
 
-        if (carry) {
-            cur->next = new ListNode(1);
-        }
-
-        return out;
+    if (carry) {
+      cur->next = new ListNode(1);
     }
+
+    return out;
+  }
 };
