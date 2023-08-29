@@ -34,9 +34,7 @@ public:
     }
 
     for (int x : a) {
-      if (x != 0) {
-          return false;
-      }
+      if (x != 0) return false;
     }
 
     return true;
