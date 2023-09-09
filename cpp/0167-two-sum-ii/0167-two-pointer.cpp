@@ -1,4 +1,4 @@
-// source : https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/
+// source : https://leetcode.com/problems/two-sum-ii-input-array-is-sorted
 // author : Landon Thull
 // date   : 08-29-2023
 
