@@ -1,3 +1,7 @@
+// source : https://leetcode.com/problems/reverse-linked-list
+// author : Landon Thull
+// date   : 09-18-2023
+
 /*
 Given the head of a singly linked list,
 reverse the list, and return the reversed list.
