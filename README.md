@@ -1,3 +1,3 @@
 # My LeetCode Solutions
 
-All solutions in C++ for the time being. I plan to add solutions in Python and Java.
+My solutions for LeetCode problems organized by language.
